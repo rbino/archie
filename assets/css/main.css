@@ -5,6 +5,7 @@
 --callouctcolor:dodgerblue;
 --hovercolor:navy;
 --darkMaincolor: #50fa7b;
+--footer-padding: 1rem 0rem;
 }
 html {
   color: #232333;
@@ -164,21 +165,30 @@ h6::before { color: var(--maincolor); content: '###### '; }
 
 /* Footer */
 footer {
-  display: flex;
-  align-items: center;
+  margin: auto;
+  text-align: center;
   border-top: 0.4rem dotted var(--bordercl);
   padding: 2rem 0rem;
   margin-top: 2rem;
+}
+footer div {
+  padding: 2rem, 2rem;
 }
 .soc {
   display: flex;
   align-items: center;
   border-bottom: none;
 }
+.soc svg {
+  max-height: 21px;
+}
 .border {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   border: 1px solid;
+}
+.border:last-child {
+  display: none;
 }
 .footer-info {
   padding: var(--footer-padding);

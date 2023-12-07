@@ -1,13 +1,13 @@
 <footer>
-  <div style="display:flex">
+  <div style="display:flex;justify-content:center">
     {{- range $index, $key := .Site.Params.Social -}}
     <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
     <a class="border"></a>
     {{- end -}}
   </div>
   <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a href="https://gohugo.io">Hugo</a> + <a
+      href="https://github.com/athul/archie">Archie</a>
   </div>
 </footer>
 {{ if not .Site.IsServer }}
