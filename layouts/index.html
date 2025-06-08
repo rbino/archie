@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
 	{{ partial "header.html" . }}
 	<body>
 		<div class="content">
 			{{ partial "head.html" . }}
 			
-			<main class="list">
+			<main class="post-list">
 				<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
 					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
@@ -14,10 +14,9 @@
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<section class="list-item">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+				<section class="post-entry">
 					<time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-					<br>{{ template "partials/pagedescription.html" . }}
+					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
