@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../fonts/IosevkaFixed-Regular.woff2') format('woff2'), url('../fonts/IosevkaFixed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('../fonts/IosevkaFixed-Italic.woff2') format('woff2'), url('../fonts/IosevkaFixed-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../fonts/IosevkaFixed-Bold.woff2') format('woff2'), url('../fonts/IosevkaFixed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('../fonts/IosevkaFixed-BoldItalic.woff2') format('woff2'), url('../fonts/IosevkaFixed-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../fonts/IosevkaFixed-Light.woff2') format('woff2'), url('../fonts/IosevkaFixed-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Fixed Web';
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('../fonts/IosevkaFixed-LightItalic.woff2') format('woff2'), url('../fonts/IosevkaFixed-LightItalic.ttf') format('truetype');
+}
